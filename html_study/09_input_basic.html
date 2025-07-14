@@ -10,7 +10,7 @@
     <!--  -->
     <form action="#" method="post">
       <div>
-        <label for="username">이름 :</label>
+        <label for="username">이름 : </label>
         <input
           type="text"
           id="username"
@@ -19,26 +19,25 @@
         />
       </div>
       <div>
-        <label for="">비밀번호 :</label>
+        <label for="password">비밀번호 : </label>
         <input
-          type=""
-          password
+          type="password"
           id="password"
           name="password"
           placeholder="비밀번호를 입력하세요."
         />
       </div>
       <div>
-        <label for="email">이메일 :</label>
+        <label for="email">이메일 : </label>
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="이메일을 입력하세요."
+          placeholder="이메일을 입력해주세요."
         />
       </div>
       <div>
-        <label for="tel">전화번호 :</label>
+        <label for="tel">전화번호 : </label>
         <input
           type="tel"
           id="tel"
@@ -47,26 +46,26 @@
         />
       </div>
       <div>
-        <label for="number"> 수량 :</label>
+        <label for="number">수량 : </label>
         <input
           type="number"
-          name="number"
           id="number"
           name="quantity"
           min="1"
           max="10"
+          value="1"
         />
       </div>
       <div>
-        <label for="date">날짜 :</label>
+        <label for="date">날짜 선택 : </label>
         <input type="date" id="date" name="date" />
       </div>
       <div>
-        <label for="color">색상 :</label>
-        <input type="color" id="color" name="color" value="" />
+        <label for="color">색상 선택 : </label>
+        <input type="color" id="color" name="color" value="#ff0000" />
       </div>
       <div>
-        <label for="range">볼륨 :</label>
+        <label for="range">볼륨 : </label>
         <input
           type="range"
           id="range"
@@ -77,28 +76,27 @@
         />
       </div>
       <div>
-        <label for="file">파일 선택 :</label>
-        <input type="file" id="file" name="file" name="upload_file" />
+        <label for="file">파일 선택 : </label>
+        <input type="file" id="file" name="upload_file" />
       </div>
       <div>
-        <label for="hidden_data">숨겨진 데이터 :</label>
+        <label for="hidden_data">숨겨진 데이터 : </label>
         <input type="hidden" id="hidden_data" name="data_id" value="12345" />
       </div>
       <button type="submit">정보 제출</button>
       <button type="reset">초기화</button>
       <button type="button">일반 버튼</button>
       <div>
-      <input type="radio" name="radio"/>사과
-      <input type="radio" name="radio"/>망고
-      <input type="radio" name="radio"/>딸기
-      <input type="radio" name="radio"/>포도
+        <input type="radio" name="radio" />사과
+        <input type="radio" name="radio" />망고
+        <input type="radio" name="radio" />포도
+        <input type="radio" name="radio" />딸기
       </div>
-      <div>
-        <input type="checkbox">동의 하시겠습니까?
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-      </div>
+      <input type="checkbox" />동의 하시겠습니까?
+      <input type="checkbox" />
+      <input type="checkbox" />
+      <input type="checkbox" />
+      <input type="checkbox" />
     </form>
   </body>
 </html>

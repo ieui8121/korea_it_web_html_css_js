@@ -11,6 +11,7 @@
         border: 1px solid black;
         border-collapse: collapse;
       }
+      th,
       td {
         padding: 8px;
         text-align: center;
@@ -102,31 +103,30 @@
 
     <h2>colspan과 rowspan 함께 사용하기</h2>
     <table>
-      <caption>
-        복합적인 표 구조 예시
-      </caption>
-      <thead>
-        <tr>
-          <th rowspan="2">구분</th>
-          <th colspan="2">성적</th>
-        </tr>
-         <tr>
-          <th>중간고사</th>
-          <th>기말고사</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>국어</td>
-          <td>80</td>
-          <td>85</td>
-        </tr>
-        <tr>
-          <td>수학</td>
-          <td>80</td>
-          <td>85</td>
-        </tr>
-      </tbody>
+        <caption>복합적인 표 구조 예시</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">구분</th>
+                <th colspan="2">성적</th>
+            </tr>
+            <tr>
+                <th>중간고사</th>
+                <th>기말고사</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>국어</td>
+                <td>80</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>수학</td>
+                <td>80</td>
+                <td>85</td>
+            </tr>
+        </tbody>
     </table>
+
   </body>
 </html>
