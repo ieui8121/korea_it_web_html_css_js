@@ -1,43 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS 적용 방식</title>
-    <style>
-      p {
-        color: hotpink;
-        font-size: 28px;
-        border: 2px solid black;
-        border-radius: 15px !important;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>인라인 스타일과 내부 스타일</h1>
-    <hr />
-    <p
-      style="
-        color: blue;
-        font-weight: 900;
-        border: 1px solid black;
-        border-radius: 50px;
-        padding: 20px;
-      "
-    >
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
-      explicabo quasi, neque velit error eius laborum eum, laboriosam hic veniam
-      repudiandae non. Esse nisi totam eveniet. Harum, omnis odit? Totam?
-    </p>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>인라인 vs 내부 스타일</title>
 
-    <hr />
+		<style>
+			body {
+				font-family: "Malgun Gothic", sans-serif;
+				padding: 20px;
+			}
 
-    <p id="text1">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae
-      cum dignissimos ut qui mollitia quas alias consectetur esse, quisquam
-      facere et laboriosam repudiandae necessitatibus fugit assumenda doloremque
-      maiores dolorem!
-    </p>
-    <strong>더 가까운게 적용 우선순위가 높다.</strong>
-  </body>
+			h1 {
+				color: purple; /* 이 문서의 모든 h1 태그는 보라색으로 지정 */
+			}
+
+			p {
+				color: green; /* p 태그의 기본 색상은 초록색으로 지정 */
+				line-height: 1.6; /* 줄 간격 */
+			}
+		</style>
+	</head>
+	<body>
+		<h1>🎨 인라인 스타일과 내부 스타일 비교하기</h1>
+
+		<hr />
+
+		<p
+			style="
+				color: blue;
+				font-weight: bold;
+				border: 2px solid blue;
+				padding: 10px;
+			"
+		>
+			이 단락은 <strong>인라인 스타일</strong>이 적용되었습니다. 내부
+			스타일 시트에서 'p' 태그를 초록색으로 지정했지만, 태그에 직접
+			파란색(blue)을 지정하니 그 규칙을 덮어쓰고 파란색으로 표시됩니다.
+		</p>
+
+		<hr />
+
+		<h2>정리: 스타일 적용 우선순위</h2>
+		<p>
+			하나의 태그에 내부 스타일과 인라인 스타일이 모두 적용될 수 있을 때,
+			브라우저는 아래와 같은 우선순위를 따릅니다.
+		</p>
+		<ul>
+			<li style="color: blue; font-weight: bold">
+				1순위: 인라인 스타일 (태그에 직접 적용)
+			</li>
+			<li style="color: green">
+				2순위: 내부 스타일 시트 (&lt;style&gt; 태그)
+			</li>
+		</ul>
+		<p>
+			결론적으로,
+			<strong
+				>더 구체적이고 가까이에서 지정한 '인라인 스타일'이 '내부
+				스타일'보다 우선 적용됩니다.</strong
+			>
+		</p>
+	</body>
 </html>
