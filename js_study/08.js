@@ -27,7 +27,7 @@ const newStudent = {
 };
 console.log(newStudent); // { name: '이동윤', age: 27, address: '부산 사하구', phone: '010-9988-1916', gender: '남' }
 
-// 배열 Spread 문법: 기존 배열의 모든 요소를 새로운 배열에 복사하거나, 새로운 요소를 추가할 때 사용합니다.
+// 배열 Spread 문법: 기존 배열의 모든 요소를 새로운 배열에 복사하거나, 새로운 요소를 추가할 때 사용합니다. 
 const newNumbers = [...numbers, 5, 6]; // 'numbers' 배열의 모든 요소를 여기에 복사하고, 5와 6을 추가합니다.
 console.log(newNumbers); // [1, 2, 3, 4, 5, 6]
 
@@ -60,3 +60,5 @@ function addProps(props) {
 }
 addProps({ data3: "data3", data4: "data4" }); // 'data3'과 'data4' 속성을 가진 객체를 전달합니다.
 console.log(obj); // { data1: 'data1', data2: 'data2', data3: 'data3', data4: 'data4' }
+
+
